@@ -2,9 +2,9 @@
 This repository contains supplementary files to support the COMPSYS792 report.
 
 
+```raw_files/``` contains raw landmark measurements.
 
-```implementation_files/``` contains implementation files for ```FAST-LIO2, LIO-SAM, Point_LIO``` and ```LIO-Livox``` used to generate maps for evaluations in the report.
+Original ROS bag recordngs and Generated Maps used in the report are available at https://drive.google.com/drive/folders/1Kkiq4TOYGVrBvpWYqn5hUITYHsvVjnw9?usp=sharing
 
-```raw_files/``` contains raw landmark measurements, generated maps as well as original ROS bag files.
 
 For any more supporting documentation, please contact me at cjos058@aucklanduni.ac.nz
