@@ -1,12 +1,14 @@
-FAST-LIO2 Implementation Steps.
+**FAST-LIO2 Implementation Steps.**
 
-Build the Docker container using the Dockerfile available in ```/docker```. Then run the container by running ``` run_container.sh```.
+Build the Docker container using the _Dockerfile_ available in ```/docker```. Then run the container by running ``` run_container.sh```.
 
 To run, 
 
 For every terminal, source the enviroment: 
 ```
-source /opt/ros/noetic/setup.bash && source /root/livox_ws/devel/setup.bash && source /root/catkin_ws/devel/setup.bash
+source /opt/ros/noetic/setup.bash &&
+source /root/livox_ws/devel/setup.bash &&
+source /root/catkin_ws/devel/setup.bash
 ```
 
 Terminal A:
@@ -21,13 +23,13 @@ roslaunch fast_lio mapping_mid360.launch
 
 Terminal C:
 ```
-    rosrun pcl_ros pointcloud_to_pcd input:=/Laser_map _prefix:=/root/catkin_ws/src/FAST_LIO/PCD_Map/global_map_
+rosrun pcl_ros pointcloud_to_pcd input:=/Laser_map _prefix:=/root/catkin_ws/src/FAST_LIO/PCD_Map/global_map_
 ```
 
 Terminal D:
 ```
-    rosparam set use_sim_time true
-    rosbag play /root/rosbags/input/mid360/livoxmap.bag --clock
+rosparam set use_sim_time true
+rosbag play /root/rosbags/input/mid360/livoxmap.bag --clock
 ```
 
 For Large files, use:
